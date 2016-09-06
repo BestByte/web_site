@@ -1,0 +1,7 @@
+Mon, 05 Sep 2016 20:23:30 selector_events.py[line:53] DEBUG Using selector: SelectSelector
+Mon, 05 Sep 2016 20:23:30 app.py[line:19] INFO Server started at http://127.0.01:9000
+Mon, 05 Sep 2016 20:23:41 helpers.py[line:405] INFO 127.0.0.1 - - [05/Sep/2016:12:23:41 +0000] "GET / HTTP/1.1" 200 15 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+Mon, 05 Sep 2016 20:23:47 helpers.py[line:405] INFO 127.0.0.1 - - [05/Sep/2016:12:23:47 +0000] "GET / HTTP/1.1" 200 15 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+Mon, 05 Sep 2016 20:23:49 helpers.py[line:405] INFO 127.0.0.1 - - [05/Sep/2016:12:23:49 +0000] "GET / HTTP/1.1" 200 15 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+Mon, 05 Sep 2016 20:25:12 helpers.py[line:405] INFO 127.0.0.1 - - [05/Sep/2016:12:25:12 +0000] "GET / HTTP/1.1" 200 15 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+Mon, 05 Sep 2016 20:25:13 helpers.py[line:405] INFO 127.0.0.1 - - [05/Sep/2016:12:25:13 +0000] "GET / HTTP/1.1" 200 15 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
