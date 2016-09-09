@@ -104,5 +104,9 @@ class ModelMetaClass(type):
                 attrs.pop(k)
             escaped_fields=list(map(lambda f:'%s'% f,fields))
             attrs['__mapping__']=mappings
+            attrs['__table__']=tableName
+            attrs['__primary_key__']=primarykey
+            attrs['__fields__']=fields
+            attrs['']
                 
         
