@@ -2,6 +2,7 @@ import asyncio,os,inspect,logging,functools
 from urlib import parse
 from aiohttp import web
 from apis import APIError
+from asyncio.tasks import async
 def get(path):
     def decorotator(func):
         @functools.wraps(func)
@@ -56,6 +57,24 @@ def has_request_arg(fn):
 		if found and (param.kind!=inspect.Parameter.VAR_POSITIONAL and param.kind!=inspect.Parameter.KEYWORD_ONLY and param.kind!=inspect.Parameter.VAR_KEYWORD):
 			raise ValueError('request parameter must be the last named parameter in function:%s%s'%(fn.__name__,str(sig)))
 	return found
+class RequestHandler():
+	def _init__(self,app,fn):
+		self._app=app
+		self._func=fn
+		self._has_request_arg=has_request_arg(fn)
+		self._has_var_kw_arg=has_var_kw_arg(fn)
+		self._has_named_kw_args=has_named_kw_args(fn)
+		self._named_kw_args=get_named_kw_args(fn)
+		self._required_kw_ars=get_required_kw_args(fn)
+	@asyncio.coroutine
+	def __call__(self,request):
+		kw=None
+		if self._has_var_kw_arg or self._has_named_kw_args or self._required_kw_ars:
+			
+
+
+
+
 
 
 
